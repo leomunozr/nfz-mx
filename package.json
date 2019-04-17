@@ -1,0 +1,26 @@
+{
+  "name": "nfz-mx",
+  "version": "0.0.1",
+  "description": "Mapa que muestra las zonas prohibidas, restringidas y peligrosas para volar drones en México.",
+  "main": "index.js",
+  "dependencies": {
+    "coordinates-converter": "0.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx http-server ./src -o",
+    "parse-csv": "node src/parse-csv"
+  },
+  "keywords": [
+    "drones",
+    "mexico",
+    "nfz",
+    "maps"
+  ],
+  "author": "leomunozr",
+  "license": "MIT"
+}
