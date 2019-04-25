@@ -165,6 +165,92 @@
         "coordinates": [
           [
             [
+              -99.138889,
+              19.443056
+            ],
+            [
+              -99.123333,
+              19.442222
+            ],
+            [
+              -99.115278,
+              19.433333
+            ],
+            [
+              -99.115278,
+              19.425
+            ],
+            [
+              -99.126389,
+              19.421944
+            ],
+            [
+              -99.1425,
+              19.423889
+            ],
+            [
+              -99.138889,
+              19.443056
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MMP-12",
+        "name": "SAN LAZARO",
+        "lim_sup": "18000 FT AMSL",
+        "lim_inf": "GND",
+        "days": "POR NOTAM",
+        "hours": "POR NOTAM",
+        "flights_affected": "VFR/IFR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.1425,
+              19.423889
+            ],
+            [
+              -99.138889,
+              19.443056
+            ],
+            [
+              -99.123333,
+              19.442222
+            ],
+            [
+              -99.126389,
+              19.421944
+            ],
+            [
+              -99.1425,
+              19.423889
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MMP-11",
+        "name": "PRIMER CUADRO",
+        "lim_sup": "18000 FT AMSL",
+        "lim_inf": "GND",
+        "days": "POR NOTAM",
+        "hours": "POR NOTAM",
+        "flights_affected": "VFR/IFR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               -99.133889,
               19.433056
             ],
@@ -309,92 +395,6 @@
         "days": "CONTINUO",
         "hours": "H24",
         "flights_affected": "VFR"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -99.1425,
-              19.423889
-            ],
-            [
-              -99.138889,
-              19.443056
-            ],
-            [
-              -99.123333,
-              19.442222
-            ],
-            [
-              -99.126389,
-              19.421944
-            ],
-            [
-              -99.1425,
-              19.423889
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "MMP-11",
-        "name": "PRIMER CUADRO",
-        "lim_sup": "18000 FT AMSL",
-        "lim_inf": "GND",
-        "days": "POR NOTAM",
-        "hours": "POR NOTAM",
-        "flights_affected": "VFR/IFR"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -99.138889,
-              19.443056
-            ],
-            [
-              -99.123333,
-              19.442222
-            ],
-            [
-              -99.115278,
-              19.433333
-            ],
-            [
-              -99.115278,
-              19.425
-            ],
-            [
-              -99.126389,
-              19.421944
-            ],
-            [
-              -99.1425,
-              19.423889
-            ],
-            [
-              -99.138889,
-              19.443056
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "MMP-12",
-        "name": "SAN LAZARO",
-        "lim_sup": "18000 FT AMSL",
-        "lim_inf": "GND",
-        "days": "POR NOTAM",
-        "hours": "POR NOTAM",
-        "flights_affected": "VFR/IFR"
       }
     },
     {
@@ -3281,48 +3281,6 @@
         "coordinates": [
           [
             [
-              -106.545833,
-              27.873333
-            ],
-            [
-              -105.511111,
-              27.869444
-            ],
-            [
-              -105.200833,
-              27.061389
-            ],
-            [
-              -105.666667,
-              26.933333
-            ],
-            [
-              -106.716667,
-              27.458333
-            ],
-            [
-              -106.545833,
-              27.873333
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "MMR-237",
-        "lim_sup": "18000 FT",
-        "lim_inf": "10000 FT",
-        "days": "LUN A SAB",
-        "hours": "1300/2100",
-        "flights_affected": "VFR"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               -105.333333,
               28.15
             ],
@@ -3368,6 +3326,48 @@
         "lim_inf": "GND",
         "days": "LUN A VIE",
         "hours": "1300 / 2400 TSC 1200 / 2300 TVC",
+        "flights_affected": "VFR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.545833,
+              27.873333
+            ],
+            [
+              -105.511111,
+              27.869444
+            ],
+            [
+              -105.200833,
+              27.061389
+            ],
+            [
+              -105.666667,
+              26.933333
+            ],
+            [
+              -106.716667,
+              27.458333
+            ],
+            [
+              -106.545833,
+              27.873333
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MMR-237",
+        "lim_sup": "18000 FT",
+        "lim_inf": "10000 FT",
+        "days": "LUN A SAB",
+        "hours": "1300/2100",
         "flights_affected": "VFR"
       }
     },
