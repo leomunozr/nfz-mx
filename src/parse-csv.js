@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const Coordinate = require('coordinates-converter');
-const CSVToJSON = require('./utils').CSVToJSON;
+const CSVToJSON = require('./csv-to-json').CSVToJSON;
 
 const uri = path.join(__dirname, 'nfz-data.csv');
 const csv = fs.readFileSync(uri, 'utf8');
