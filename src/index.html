@@ -3,24 +3,33 @@
 
   <head>
     <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <style>
-      #map {
-        height: 100%;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="dist/styles.css">
   </head>
 
   <body>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">No Fly Zones CDMX</h1>
+        </div>
+      </div>
+    </section>
+
     <div id="map"></div>
+
+    <section class="section has-background-light">
+      <div class="container">
+        <h1 class="subtitle has-text-centered">¿Qué es esto?</h1>
+      </div>
+    </section>
+
     <script async defer src="./map.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2gSj3BSU_Jc2rQt9mhHgpmm3rWxTDmdw&callback=initMap"
       async defer></script>
   </body>

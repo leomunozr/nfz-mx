@@ -4,16 +4,19 @@
   "description": "Mapa que muestra las zonas prohibidas, restringidas y peligrosas para volar drones en México.",
   "main": "index.js",
   "dependencies": {
-    "coordinates-converter": "0.0.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "http-server": "^0.11.1"
+    "coordinates-converter": "0.0.2",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.12.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server ./src -o",
-    "parse-csv": "node src/parse-csv"
+    "start": "npx http-server ./src -o -c-1",
+    "prestart": "npm run build-css",
+    "parse-csv": "node src/parse-csv",
+    "build-css": "npx node-sass --output src/dist --output-style compressed src/styles/styles.scss"
   },
   "keywords": [
     "drones",
