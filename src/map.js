@@ -15,7 +15,7 @@ function initMap() {
 
   infowindow = new google.maps.InfoWindow();
 
-  map.data.loadGeoJson('nfz-data.json', null, () => showInfo(map.data));
+  map.data.loadGeoJson('dist/nfz-data.json', null, () => showInfo(map.data));
 
   map.data.setStyle((feature) => {
     const geo = feature.getGeometry()
