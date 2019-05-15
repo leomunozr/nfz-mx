@@ -127,6 +127,7 @@ function initMap() {
   infowindow = new google.maps.InfoWindow();
 
   map.data.loadGeoJson('dist/nfz-data.json', null, () => showInfo(map.data));
+  map.data.loadGeoJson('dist/aerodromos.json', null, () => showInfo(map.data));
 
   map.data.setStyle((feature) => {
     const geo = feature.getGeometry()
@@ -156,7 +157,7 @@ function clickHandler(event) {
   const position = event.feature ? event.latLng : this.center;
   const info = extractInfo(event);
   const content = formatContent(info);
-  
+  console.log(info, content)
   infowindow.setPosition(position);
   infowindow.setContent(content);
   infowindow.open(map);

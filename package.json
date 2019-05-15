@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx http-server ./src -o -c-1",
     "prestart": "npm run build-css",
-    "parse-csv": "node lib/parse-csv",
+    "parse-csv": "node lib/parse-csv && node lib/parse-aerodromos",
     "build-css": "npx node-sass --output src/dist --output-style compressed src/styles/styles.scss"
   },
   "keywords": [
