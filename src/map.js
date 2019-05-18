@@ -126,8 +126,13 @@ function initMap() {
 
   infowindow = new google.maps.InfoWindow();
 
-  map.data.loadGeoJson('dist/nfz-data.json', null, () => showInfo(map.data));
-  map.data.loadGeoJson('dist/aerodromos.json', null, () => showInfo(map.data));
+  [
+    'dist/aerodromos.json',
+    'dist/nfz-data.json',
+    'dist/helipuertos.json'
+  ].forEach(dataSource => {
+    map.data.loadGeoJson(dataSource, null, () => addEvents(map.data));
+  });
 
   map.data.setStyle((feature) => {
     const geo = feature.getGeometry()
