@@ -148,7 +148,7 @@ function initMap() {
     }
   });
 
-  function showInfo(a) {
+  function addEvents(a) {
     a.addListener('click', clickHandler);
   }
 }
@@ -157,34 +157,24 @@ function clickHandler(event) {
   const position = event.feature ? event.latLng : this.center;
   const info = extractInfo(event);
   const content = formatContent(info);
-  console.log(info, content)
+  
   infowindow.setPosition(position);
   infowindow.setContent(content);
   infowindow.open(map);
 }
 
 function extractInfo(obj) {
-  const properties = [
-    'id',
-    'name',
-    'lim_sup',
-    'lim_inf',
-    'days',
-    'hours',
-    'flights_affected'
-  ];
-  const values = obj.hasOwnProperty('feature') ?
-    properties.map(prop => obj.feature.getProperty(prop) || '') :
-    properties.map(prop => obj[prop] || '');
+  const values = [];
 
-  return values;
+  obj.hasOwnProperty('feature') ?
+    obj.feature.forEachProperty(prop => values.push(prop)) :
+    Object.keys(obj).map(k => values.push(obj[k]));
+  
+  return values.filter(v => v);
 }
 
 function formatContent(info) {
   return `<table>
-  <tr><td><b>${info[1]}</b> (${info[0]})</td></tr>
-  <tr><td>${info[3]} - ${info[2]}</td></tr>
-  <tr><td>${info[4]}: ${info[5]}</td></tr>
-  <tr><td>${info[6]}</td></tr>
+    ${info.map(i => `<tr><td>${i}</td></tr>`).join('')}
   </table>`;
 }
